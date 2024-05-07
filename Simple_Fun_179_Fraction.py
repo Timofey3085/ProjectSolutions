@@ -1,4 +1,5 @@
-"""Given two integers a and b, return the sum of the numerator and the denominator of the reduced fraction a/b.
+"""
+Given two integers a and b, return the sum of the numerator and the denominator of the reduced fraction a/b.
 Example
 For a = 2, b = 4, the result should be 3
 Since 2/4 = 1/2 => 1 + 2 = 3.
@@ -12,7 +13,8 @@ The numerator, 1 ≤ a ≤ 2000.
 [input] integer b
 The denominator, 1 ≤ b ≤ 2000.
 [output] an integer
-The sum of the numerator and the denominator of the reduces fraction."""
+The sum of the numerator and the denominator of the reduces fraction.
+"""
 import numpy
 import pytest
 import unittest
