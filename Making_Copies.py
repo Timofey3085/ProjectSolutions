@@ -9,6 +9,7 @@ t[1] += 5
 t = [1, 7, 3, 4]
 t_copy = [1, 2, 3, 4]
 """
+import pytest
 
 
 def copy_list(l):
@@ -21,3 +22,7 @@ def test_copy_list():
     assert copy_list([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]
     assert copy_list([]) == []
     assert copy_list(["Hello World"]) == ["Hello World"]
+
+
+if __name__ == "__main__":
+    pytest.main()
