@@ -42,5 +42,5 @@ class TestFraction(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    test_fraction()
+    pytest.main()
     unittest.main()
