@@ -38,10 +38,10 @@ import pytest
 
 def cooking_time(needed_power, minutes, seconds, power):
     """MySolution"""
-    n_power = int(needed_power.replace('W', ''))
+    new_power = int(needed_power.replace('W', ''))
     all_seconds = minutes * 60 + seconds
     my_power = int(power.replace('W', ''))
-    result_seconds = math.ceil((n_power * all_seconds) / my_power)
+    result_seconds = math.ceil((new_power * all_seconds) / my_power)
     result_minutes = result_seconds // 60
     result_seconds %= 60
 
