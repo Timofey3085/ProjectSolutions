@@ -1,10 +1,6 @@
 ![versions](https://img.shields.io/pypi/pyversions/pybadges.svg)
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Hi,+I'am+a+Python+developer.)](https://git.io/typing-svg)
-<<<<<<< HEAD
-=======
-# Project Solutions
->>>>>>> 31c41a00fd4a89c1ceafee6ff075e068690d6204
 
 # ProjectSolutions
 ### Решаю тестовые задания и задачи с codewars, leetcode, checkio, а так же пишу тесты к ним.
