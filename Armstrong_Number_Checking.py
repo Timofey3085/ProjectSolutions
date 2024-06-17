@@ -19,7 +19,7 @@ def is_armstrong(num: int) -> bool:
 
 
 def test_is_armstrong():
-    """PyTest"""
+    """Pytest"""
     assert is_armstrong(153) is True
     assert is_armstrong(370) is True
     assert is_armstrong(1634) is True
@@ -28,7 +28,7 @@ def test_is_armstrong():
 class IsArmstrong(unittest.TestCase):
 
     def test_is_armstrong(self):
-        """UnitTest"""
+        """Unittest"""
         self.assertEqual(is_armstrong(947), False)
         self.assertEqual(is_armstrong(8208), True)
         self.assertEqual(is_armstrong(4), True)
