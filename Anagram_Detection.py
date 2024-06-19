@@ -13,7 +13,7 @@ import pytest
 
 
 def is_anagram(test, original):
-    """MySolution"""
+    """My_Solution"""
     return True if Counter(test.lower()) == Counter(original.lower()) else False
 
 
