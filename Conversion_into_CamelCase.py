@@ -9,7 +9,7 @@ import pytest
 
 
 def to_camel_case(name: str) -> str:
-    """MySolution"""
+    """My_Solution"""
     new_string = name.replace("_", " ").title()
     string = new_string.replace(" ", "")
     return string
