@@ -10,7 +10,7 @@ import pytest
 
 
 def is_armstrong(num: int) -> bool:
-    """MySolution"""
+    """My_Solution"""
     number = sum([int(item)**len(str(num)) for item in str(num)])
     if number == num:
         return True
