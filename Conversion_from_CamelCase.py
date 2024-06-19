@@ -10,7 +10,7 @@ import pytest
 
 
 def from_camel_case(name: str) -> str:
-    """MySolution"""
+    """My_Solution"""
     k = re.findall('.[^A-Z]*', name)
     new_string = "_".join(k).lower()
     return new_string
