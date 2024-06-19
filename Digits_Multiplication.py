@@ -8,7 +8,7 @@ import pytest
 
 
 def digits(number: int) -> int:
-    """MySolution"""
+    """My_Solution"""
     n = 1
     num = str(number).replace('0', '')
     for i in num:

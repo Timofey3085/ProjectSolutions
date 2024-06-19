@@ -16,7 +16,7 @@ import pytest
 
 
 def difference_of_squares(n):
-    """MySolution"""
+    """My_Solution"""
     return (sum([i for i in range(n + 1)]) ** 2) - sum([k ** 2 for k in range(n + 1)])
 
 

@@ -10,7 +10,7 @@ import pytest
 
 
 def div_con(x):
-    """MySolution"""
+    """My_Solution"""
     ints = sum([elem for elem in x if int == type(elem)])
     lst = [string for string in x if str == type(string)]
     k = sum([int(i) for i in lst])
