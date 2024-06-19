@@ -13,7 +13,7 @@ import pytest
 
 
 def to_float_array(arr):
-    """MySolution"""
+    """My_Solution"""
     return [float(item) for item in arr]
 
 
