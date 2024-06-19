@@ -19,7 +19,7 @@ import pytest
 
 
 def check_exam(arr1,arr2):
-    """MySolution"""
+    """My_Solution"""
     count = 0
     for i, m in zip(arr1, arr2):
         if m == '':
