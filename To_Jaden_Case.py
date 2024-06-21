@@ -25,7 +25,8 @@ def to_jaden_case(string):
 
 def test_to_jaden_case():
     """Pytest"""
-    assert to_jaden_case("How can mirrors be real if our eyes aren't real") == "How Can Mirrors Be Real If Our Eyes Aren't Real"
+    assert to_jaden_case("How can mirrors be real if our eyes aren't real") == ("How Can Mirrors Be Real "
+                                                                                "If Our Eyes Aren't Real")
 
 
 if __name__ == '__main__':
