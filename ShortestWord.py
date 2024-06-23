@@ -12,11 +12,11 @@ def find_short(s):
 
 
 def test_find_short():
-    """My_test_Pytest"""
+    """Pytest"""
     assert find_short("Hello World") == 5
     assert find_short("Hello my friend") == 2
     assert find_short("Это тест") == 3
 
 
 if __name__ == "__main__":
-    test_find_short()
+    pytest.main()
