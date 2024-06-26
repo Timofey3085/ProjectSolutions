@@ -9,8 +9,6 @@ The function you will write needs to return the colour as 'key' and association 
 For example:
 var array = [["white", "goodness"], ...] returns [{'white': 'goodness'}
 """
-import unittest
-
 import pytest
 
 
