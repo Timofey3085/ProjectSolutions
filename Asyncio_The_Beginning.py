@@ -15,10 +15,10 @@ import asyncio
 import pytest
 
 
-async def dreaming(n, m):
+async def dreaming(n: int, m: int) -> int:
     """My_solution"""
     await asyncio.sleep(n)
-    mult = m ** n
+    mult: int = m ** n
     return mult
 
 
@@ -30,7 +30,7 @@ async def dreaming(n, m):
     (3, 3, 27),
     (2, 4, 16),
 ])
-async def test_dreaming(n, m, mult):
+async def test_dreaming(n: int, m: int, mult: int):
     assert await dreaming(n, m) == mult
 
 
