@@ -11,15 +11,19 @@ Examples (input --> output)
 Note you should only return a number, the count of divisors.
 The numbers between parentheses are shown only for you to see which numbers are counted in each case.
 """
+import asyncio
+
 import pytest
 
 
-def divisors(n):
+async def divisors(n):
     """My_solution"""
     k = len([i for i in range(1, n + 1) if n % i == 0])
+    await asyncio.sleep(1)
     return k
 
 
+@pytest.mark.asyncio
 @pytest.mark.parametrize("n, k", [
     (1, 1),
     (4, 3),
@@ -28,9 +32,9 @@ def divisors(n):
     (30, 8),
     (4096, 13),
 ])
-def test_divisors(n, k):
+async def test_divisors(n, k):
     """Pytest"""
-    assert divisors(n) == k
+    assert await divisors(n) == k
 
 
 if __name__ == '__main__':
