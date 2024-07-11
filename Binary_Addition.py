@@ -7,37 +7,41 @@ Examples:(Input1, Input2 --> Output (explanation)))
 1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
 5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
 """
+import asyncio
 import unittest
 
 import pytest
 
 
-def add_binary(a, b):
-    """My_solution"""
+async def add_binary(a, b):
     result = '{:b}'.format(a + b)
+    await asyncio.sleep(1)
     return result
 
 
+@pytest.mark.asyncio
 @pytest.mark.parametrize("a, b, result", [
     (1, 1, "10"),
     (0, 1, '1'),
     (1, 0, '1'),
     (0, 0, '0')
 ])
-def test_add_binary(a, b, result):
+async def test_add_binary(a, b, result):
     """Pytest"""
-    assert add_binary(a, b) == result
+    assert await add_binary(a, b) == result
 
 
 class AddBinary(unittest.TestCase):
 
+    def setUp(self):
+        self.loop = asyncio.get_event_loop()
+
     def test_add_binary(self):
         """Unittest"""
-        self.assertEqual(add_binary(2, 2), '100')
-        self.assertEqual(add_binary(51, 12), '111111')
+        self.assertEqual(self.loop.run_until_complete(add_binary(2, 2)), '100')
+        self.assertEqual(self.loop.run_until_complete(add_binary(51, 12)), '111111')
 
 
 if __name__ == '__main__':
     pytest.main()
     unittest.main()
-
