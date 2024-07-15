@@ -38,6 +38,7 @@ class DuplicateZeros(unittest.TestCase):
         self.assertEqual(duplicate_zeros([100, 10, 0, 101, 1000]), [100, 10, 0, 0, 101, 1000])
         self.assertEqual(duplicate_zeros([100, 10, 1, 101, 1000]), [100, 10, 1, 101, 1000])
         self.assertEqual(duplicate_zeros([1, 0, 0]), [1, 0, 0, 0, 0])
+        self.assertEqual(duplicate_zeros([1, 0, 0, 0]), [1, 0, 0, 0, 0, 0, 0])
 
 
 if __name__ == '__main__':
