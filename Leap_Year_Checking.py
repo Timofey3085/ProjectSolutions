@@ -31,6 +31,7 @@ class IsLeapYear(unittest.TestCase):
         self.assertEqual(is_leap_year(2021), False)
         self.assertEqual(is_leap_year(1600), True)
         self.assertEqual(is_leap_year(1985), False)
+        self.assertEqual(is_leap_year(2001), False)
 
 
 if __name__ == '__main__':
