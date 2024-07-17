@@ -31,6 +31,7 @@ async def dreaming(n: int, m: int) -> int:
     (2, 4, 16),
 ])
 async def test_dreaming(n: int, m: int, mult: int):
+    """Pytest"""
     assert await dreaming(n, m) == mult
 
 
