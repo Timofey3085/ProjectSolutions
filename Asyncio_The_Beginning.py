@@ -29,6 +29,7 @@ async def dreaming(n: int, m: int) -> int:
     (1, 2, 2),
     (3, 3, 27),
     (2, 4, 16),
+    (3, 2, 8),
 ])
 async def test_dreaming(n: int, m: int, mult: int):
     """Pytest"""
