@@ -10,8 +10,6 @@ radii(2, 1, 2) = (0.3872983346207417, 1.032795558988644) (maths, blah blah blah)
 No golfing limit for this one, because I felt that this kata wasn't very... golfable.
 But if you want to beat me, I got a 74 char solution, and I would really like to see limit being pushed further.
 """
-
-
 import asyncio
 import math
 
