@@ -33,6 +33,7 @@ def check_three_and_two(array):
     (["a", "a", "a", "a", "a"], False),
     (["b", "b", "b", "a", "a"], True),
     (["c", "c", "c", "a", "a"], True),
+    (["b", "b", "b", "c", "c"], True),
 ])
 def test_check_three_and_two(array, expected_result):
     """Pytest"""
