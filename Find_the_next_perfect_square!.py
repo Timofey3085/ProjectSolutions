@@ -34,6 +34,7 @@ def find_next_square(sq):
     (342786627, -1),
 ])
 def test_find_next_square(sq, expected_result):
+    """Pytest"""
     assert find_next_square(sq) == expected_result
 
 
