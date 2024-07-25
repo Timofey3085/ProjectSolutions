@@ -29,6 +29,8 @@ import pytest
 def length_of_last_word(s):
     """My_solution"""
     return len(s.split().pop())
+    # Or another Solution
+    # return len(s.split()[-1])
 
 
 def test_length_of_last_word():
