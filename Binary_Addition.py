@@ -14,6 +14,7 @@ import pytest
 
 
 async def add_binary(a, b):
+    """My_solution"""
     result = '{:b}'.format(a + b)
     await asyncio.sleep(1)
     return result
