@@ -34,8 +34,9 @@ def open_or_senior(data):
 
 
 @pytest.mark.parametrize("data, expected_result", [
-    ([(45, 12),(55,21),(19, -2),(104, 20)], ['Open', 'Senior', 'Open', 'Senior']),
-    ([(16, 23),(73,1),(56, 20),(1, -1)], ['Open', 'Open', 'Senior', 'Open']),
+    ([(45, 12), (55, 21), (19, -2), (104, 20)], ['Open', 'Senior', 'Open', 'Senior']),
+    ([(16, 23), (73, 1), (56, 20), (1, -1)], ['Open', 'Open', 'Senior', 'Open']),
+    ([(17, 24), (75, 2), (57, 19), (2, -2)], ['Open', 'Open', 'Senior', 'Open']),
 ])
 def test_open_or_senior(data, expected_result):
     """Pytest"""
