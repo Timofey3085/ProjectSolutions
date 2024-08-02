@@ -16,19 +16,19 @@ import pytest
 
 def get_missing_element(seq: list[int]) -> int:
     """My_solution"""
-    for j in range(0, 10):
-        if j not in seq:
-            return j
+    for missing_element in range(0, 10):
+        if missing_element not in seq:
+            return missing_element
 
 
-@pytest.mark.parametrize("seq, j", [
+@pytest.mark.parametrize("seq, missing_element", [
     ([0, 5, 1, 3, 2, 9, 7, 6, 4], 8),
     ([9, 2, 4, 5, 7, 0, 8, 6, 1], 3),
     ([9, 2, 3, 5, 7, 0, 8, 6, 1], 4),
 ])
-def test_get_missing_elements(seq, j):
+def test_get_missing_elements(seq, missing_element):
     """Pytest"""
-    assert get_missing_element(seq) == j
+    assert get_missing_element(seq) == missing_element
 
 
 if __name__ == '__main__':
