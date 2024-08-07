@@ -32,6 +32,7 @@ def find_next_square(sq):
     (15241383936, 15241630849),
     (155, -1),
     (342786627, -1),
+    (153, -1)
 ])
 def test_find_next_square(sq, expected_result):
     """Pytest"""
