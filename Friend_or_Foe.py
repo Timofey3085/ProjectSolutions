@@ -27,7 +27,7 @@ def friend(x):
     (["Ryan", "Kieran", "Mark"], ["Ryan", "Mark"]),
     (["Ryan", "Jimmy", "abc", "d", "Cool Man"], ["Ryan"]),
     (["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"], ["Jimm", "Cari", "aret"]),
-    (["Tima", "Ksenia"], ["Tima"]),
+    (["Tima", "Ksenia", "Dima"], ["Tima", "Dima"]),
 ])
 def test_friend(x, result):
     """Pytest"""
