@@ -8,7 +8,7 @@ import pytest
 
 
 def is_it_letter(s):
-    """MySolution"""
+    """My_Solution"""
     return True if s.isalpha() else False
 
 
