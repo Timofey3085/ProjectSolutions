@@ -16,6 +16,7 @@ class GetMinMax(unittest.TestCase):
         self.assertEqual(get_min_max([2, 1, 5]), (1, 5))
         self.assertEqual(get_min_max([0, 0, 0]), (0, 0))
         self.assertEqual(get_min_max([100, 5]), (5, 100))
+        self.assertEqual(get_min_max([10, 5]), (5, 10))
 
 
 if __name__ == '__main__':
