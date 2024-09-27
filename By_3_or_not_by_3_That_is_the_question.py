@@ -29,6 +29,7 @@ def test_divisible_by_three():
     """Pytest"""
     assert divisible_by_three('123') is True
     assert divisible_by_three('153') is True
+    assert divisible_by_three('606') is True
 
 
 if __name__ == '__main__':
