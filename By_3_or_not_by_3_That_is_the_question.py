@@ -30,6 +30,7 @@ def test_divisible_by_three():
     assert divisible_by_three('123') is True
     assert divisible_by_three('153') is True
     assert divisible_by_three('606') is True
+    assert divisible_by_three('001') is False
 
 
 if __name__ == '__main__':
