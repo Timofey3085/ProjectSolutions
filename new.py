@@ -14,4 +14,10 @@ def multiples(m, n):
     return [n * i for i in range(1, m + 1)]
 
 
+def test_multiples():
+    """Pytest"""
+    assert multiples(3, 5) == [5, 10, 15]
 
+
+if __name__ == '__main__':
+    pytest.main()
