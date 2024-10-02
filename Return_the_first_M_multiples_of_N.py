@@ -18,6 +18,7 @@ def test_multiples():
     """Pytest"""
     assert multiples(3, 5) == [5, 10, 15]
     assert multiples(2, 3) == [3, 6]
+    assert multiples(1, 3) == [3]
 
 
 if __name__ == '__main__':
