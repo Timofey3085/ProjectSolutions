@@ -16,4 +16,12 @@ def get_count(sentence):
     return count
 
 
+@pytest.mark.parametrize("sentence, expected_result", [
+    ("aeiou", 5)
+])
+def test_get_count(sentence, expected_result):
+    assert get_count(sentence) == expected_result
 
+
+if __name__ == '__main__':
+    pytest.main()
