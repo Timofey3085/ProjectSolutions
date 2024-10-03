@@ -17,7 +17,11 @@ def get_count(sentence):
 
 
 @pytest.mark.parametrize("sentence, expected_result", [
-    ("aeiou", 5)
+    ("aeiou", 5),
+    ("y", 0),
+    ("bcdfghjklmnpqrstvwxz y", 0),
+    ("", 0),
+    ("abracadabra", 5),
 ])
 def test_get_count(sentence, expected_result):
     assert get_count(sentence) == expected_result
