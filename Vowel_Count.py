@@ -22,6 +22,7 @@ def get_count(sentence):
     ("bcdfghjklmnpqrstvwxz y", 0),
     ("", 0),
     ("abracadabra", 5),
+    ("a", 1),
 ])
 def test_get_count(sentence, expected_result):
     assert get_count(sentence) == expected_result
