@@ -23,7 +23,8 @@ def vaporcode(s):
 
 @pytest.mark.parametrize("s, result", [
     ("Lets go to the movies", "L  E  T  S  G  O  T  O  T  H  E  M  O  V  I  E  S"),
-    ("Why isn't my code working?","W  H  Y  I  S  N  '  T  M  Y  C  O  D  E  W  O  R  K  I  N  G  ?"),
+    ("Why isn't my code working?", "W  H  Y  I  S  N  '  T  M  Y  C  O  D  E  W  O  R  K  I  N  G  ?"),
+    ("What is happened", "W  H  A  T  I  S  H  A  P  P  E  N  E  D"),
 ])
 def test_vaporcode(s, result):
     assert vaporcode(s) == result
