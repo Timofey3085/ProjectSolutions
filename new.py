@@ -11,6 +11,7 @@ Examples
 "Lets go to the movies"       -->  "L  E  T  S  G  O  T  O  T  H  E  M  O  V  I  E  S"
 "Why isn't my code working?"  -->  "W  H  Y  I  S  N  '  T  M  Y  C  O  D  E  W  O  R  K  I  N  G  ?"
 """
+import pytest
 
 
 def vaporcode(s):
@@ -18,3 +19,15 @@ def vaporcode(s):
     new_string = s.replace(" ", "").upper()  # Убираем пробелы и переводим строку в верхний регистр
     result = "  ".join(new_string)  # Добавляем 2 пробела между каждым символом
     return result
+
+
+@pytest.mark.parametrize("s, result", [
+    ("Lets go to the movies", "L  E  T  S  G  O  T  O  T  H  E  M  O  V  I  E  S"),
+    ("Why isn't my code working?","W  H  Y  I  S  N  '  T  M  Y  C  O  D  E  W  O  R  K  I  N  G  ?"),
+])
+def test_vaporcode(s, result):
+    assert vaporcode(s) == result
+
+
+if __name__ == '__main__':
+    pytest.main()
