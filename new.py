@@ -22,8 +22,10 @@ def capitalize(s, ind):
 
 
 @pytest.mark.parametrize("s, ind, expected_result", [
-    ("abcdef",[1,2,5],'aBCdeF'),
-    ("abcdef",[1,2,5,100],'aBCdeF',),
+    ("abcdef", [1, 2, 5], 'aBCdeF'),
+    ("abcdef", [1, 2, 5, 100], 'aBCdeF'),
+    ("codewars", [1, 3, 5, 50], 'cOdEwArs'),
+    ("abracadabra", [2, 6, 9, 10], 'abRacaDabRA'),
 ])
 def test_capitalize(s, ind, expected_result):
     assert capitalize(s, ind) == expected_result
