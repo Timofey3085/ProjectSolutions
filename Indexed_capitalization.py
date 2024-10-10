@@ -27,6 +27,7 @@ def capitalize(s, ind):
     ("codewars", [1, 3, 5, 50], 'cOdEwArs'),
     ("abracadabra", [2, 6, 9, 10], 'abRacaDabRA'),
     ("codewarriors", [5], 'codewArriors'),
+    ("abcd", [1, 3], 'aBcD'),
 ])
 def test_capitalize(s, ind, expected_result):
     assert capitalize(s, ind) == expected_result
