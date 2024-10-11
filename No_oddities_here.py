@@ -18,6 +18,7 @@ def no_odds(values):
     ([-1, -3, -5, -7, -9], []),
     ([2, 4, 8, 6, 0], [2, 4, 8, 6, 0]),
     ([], []),
+    ([100, 202, 203], [100, 202]),
 ])
 def test_no_odds(values, result):
     assert no_odds(values) == result
