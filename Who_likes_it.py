@@ -42,6 +42,7 @@ def likes(names):
     (['Alex', 'Jacob', 'Mark', 'Max'], 'Alex, Jacob and 2 others like this'),
 ])
 def test_likes(names, result):
+    """Pytest"""
     assert likes(names) == result
 
 
