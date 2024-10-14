@@ -12,6 +12,9 @@ It must return the display text as shown in the examples:
 ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
 Note: For 4 or more names, the number in "and 2 others" simply increases.
 """
+import unittest
+
+import pytest
 
 
 def likes(names):
@@ -29,3 +32,18 @@ def likes(names):
         return f'{names[0]}, {names[1]} and 2 others like this'
     if length > 4:
         return f'{names[0]}, {names[1]} and {length - 2} others like this'
+
+
+@pytest.mark.parametrize("names, result", [
+    ([], 'no one likes this'),
+    (['Peter'], 'Peter likes this'),
+    (['Jacob', 'Alex'], 'Jacob and Alex like this'),
+    (['Max', 'John', 'Mark'], 'Max, John and Mark like this'),
+    (['Alex', 'Jacob', 'Mark', 'Max'], 'Alex, Jacob and 2 others like this'),
+])
+def test_likes(names, result):
+    assert likes(names) == result
+
+
+if __name__ == '__main__':
+    pytest.main()
