@@ -34,7 +34,7 @@ def likes(names):
         return f'{names[0]}, {names[1]} and {length - 2} others like this'
 
 
-@pytest.mark.parametrize("names, result", [
+@pytest.mark.parametrize("names, expected_result", [
     ([], 'no one likes this'),
     (['Peter'], 'Peter likes this'),
     (['Jacob', 'Alex'], 'Jacob and Alex like this'),
@@ -42,9 +42,9 @@ def likes(names):
     (['Alex', 'Jacob', 'Mark', 'Max'], 'Alex, Jacob and 2 others like this'),
     (['Sergei', 'Jacob', 'Mark', 'Max', 'Axel', 'Tim'], 'Sergei, Jacob and 4 others like this')
 ])
-def test_likes(names, result):
+def test_likes(names, expected_result):
     """Pytest"""
-    assert likes(names) == result
+    assert likes(names) == expected_result
 
 
 if __name__ == '__main__':
