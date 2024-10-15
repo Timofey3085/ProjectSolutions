@@ -40,7 +40,8 @@ def likes(names):
     (['Jacob', 'Alex'], 'Jacob and Alex like this'),
     (['Max', 'John', 'Mark'], 'Max, John and Mark like this'),
     (['Alex', 'Jacob', 'Mark', 'Max'], 'Alex, Jacob and 2 others like this'),
-    (['Sergei', 'Jacob', 'Mark', 'Max', 'Axel', 'Tim'], 'Sergei, Jacob and 4 others like this')
+    (['Sergei', 'Jacob', 'Mark', 'Max', 'Axel', 'Tim'], 'Sergei, Jacob and 4 others like this'),
+    (['01', '02', '03', '04', '05', '06', '07', '08'], '01, 02 and 6 others like this'),
 ])
 def test_likes(names, expected_result):
     """Pytest"""
