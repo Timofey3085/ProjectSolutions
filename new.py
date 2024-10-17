@@ -8,6 +8,7 @@ odd_one([2,16,98,10,13,78]) # => 4
 odd_one([4,-8,98,-12,-7,90,100]) # => 4
 odd_one([2,4,6,8]) # => -1
 """
+import pytest
 
 
 def odd_one(arr):
@@ -17,3 +18,18 @@ def odd_one(arr):
             return i
         if sum(arr) % 2 == 0:
             return -1
+
+
+@pytest.mark.parametrize("arr, expected_result", [
+    ([2, 4, 6, 7, 10], 3),
+    ([2, 16, 98, 10, 13, 78], 4),
+    ([4, -8, 98, -12, -7, 90, 100], 4),
+    ([2, 4, 6, 8], -1),
+])
+def test_odd_one(arr, expected_result):
+    """Pytest"""
+    assert odd_one(arr) == expected_result
+
+
+if __name__ == '__main__':
+    pytest.main()
