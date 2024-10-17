@@ -12,6 +12,7 @@ odd_one([2,4,6,8]) # => -1
 
 def odd_one(arr):
     for i, v in enumerate(arr):
+        """My_solution"""
         if v % 2 != 0:
             return i
         if sum(arr) % 2 == 0:
