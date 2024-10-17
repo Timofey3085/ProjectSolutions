@@ -12,8 +12,8 @@ import pytest
 
 
 def odd_one(arr):
+    """My_solution"""
     for i, v in enumerate(arr):
-        """My_solution"""
         if v % 2 != 0:
             return i
         if sum(arr) % 2 == 0:
