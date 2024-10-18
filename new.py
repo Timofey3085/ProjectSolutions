@@ -7,6 +7,7 @@ Let'see some cases:
 The value, val will be always a positive integer.
 The power, pow_ , always higher than 1 .
 """
+import pytest
 
 
 def find_next_power(val, pow_):
@@ -17,3 +18,17 @@ def find_next_power(val, pow_):
         if result > val:
             return result
         start += 1
+
+
+@pytest.mark.parametrize("val, pow_, result", [
+    (12385, 3, 13824),
+    (1245678, 5, 1419857),
+    (1245678, 6, 1771561),
+])
+def test_find_next_power(val, pow_, result):
+    """Pytest"""
+    assert find_next_power(val, pow_) == result
+
+
+if __name__ == '__main__':
+    pytest.main()
