@@ -9,3 +9,11 @@ The power, pow_ , always higher than 1 .
 """
 
 
+def find_next_power(val, pow_):
+    """My_solution"""
+    start = 1
+    while True:
+        result = start ** pow_
+        if result > val:
+            return result
+        start += 1
