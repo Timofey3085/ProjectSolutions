@@ -47,6 +47,7 @@ def move_ten(st):
 
 
 @pytest.mark.parametrize("st, result", [
+    ("jycq", "tima"),
     ("testcase", "docdmkco"),
     ("codewars", "mynogkbc"),
     ("exampletesthere", "ohkwzvodocdrobo"),
