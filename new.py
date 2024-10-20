@@ -3,6 +3,7 @@ Move every letter in the provided string forward 10 letters through the alphabet
 If it goes past 'z', start again at 'a'.
 Input will be a string with length > 0.
 """
+import pytest
 
 
 def move_ten(st):
@@ -43,3 +44,20 @@ def move_ten(st):
             new_index = (alphabet[i] + 10) % 26
             result += list(alphabet.keys())[new_index]
     return result
+
+
+@pytest.mark.parametrize("st, result", [
+    ("testcase", "docdmkco"),
+    ("codewars", "mynogkbc"),
+    ("exampletesthere", "ohkwzvodocdrobo"),
+    ("returnofthespacecamel", "bodebxypdroczkmomkwov"),
+    ("bringonthebootcamp", "lbsxqyxdrolyydmkwz"),
+    ("weneedanofficedog", "goxoonkxyppsmonyq"),
+])
+def test_move_ten(st, result):
+    """Pytest"""
+    assert move_ten(st) == result
+
+
+if __name__ == '__main__':
+    pytest.main()
