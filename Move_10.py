@@ -39,9 +39,9 @@ def move_ten(st):
 
     result = ""
 
-    for i in st:
-        if i in alphabet:
-            new_index = (alphabet[i] + 10) % 26
+    for word in st:
+        if word in alphabet:
+            new_index = (alphabet[word] + 10) % 26
             result += list(alphabet.keys())[new_index]
     return result
 
