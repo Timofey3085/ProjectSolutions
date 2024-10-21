@@ -9,3 +9,9 @@ Examples
 """
 
 
+def count_repeats(txt):
+    count = 0
+    for i in range(1, len(txt)):
+        if txt[i] == txt[i - 1]:
+            count += 1
+    return count
