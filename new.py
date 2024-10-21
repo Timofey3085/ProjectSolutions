@@ -20,6 +20,7 @@ def count_repeats(txt):
 
 
 @pytest.mark.parametrize("txt, count", [
+    ('1122334455', 5),
     ('123456', 0),
     ('abcdefg', 0),
     ('aabbccddeeffgg', 7),
