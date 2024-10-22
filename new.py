@@ -8,3 +8,16 @@ For example:
 """
 
 
+import collections
+
+
+def replace_common(st, letter):
+    result = []
+    count = collections.Counter(st.replace(" ", ""))
+    most_common_letter, _ = count.most_common(1)[0]
+    for i in st:
+        if i == most_common_letter:
+            result.append(letter)
+        if i != most_common_letter:
+            result.append(i)
+    return "".join(result)
