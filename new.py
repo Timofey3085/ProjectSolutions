@@ -12,6 +12,7 @@ import collections
 
 
 def replace_common(st, letter):
+    """My_solution"""
     result = []
     count = collections.Counter(st.replace(" ", ""))
     most_common_letter, _ = count.most_common(1)[0]
