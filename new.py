@@ -9,6 +9,7 @@ The input will always be made of only lowercase letters and will never be empty.
 
 
 def words_to_marks(s):
+    """My_solution"""
     alphabet = {
         'a': 1,
         'b': 2,
