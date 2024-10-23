@@ -6,6 +6,7 @@ So friendship is twice as strong as love :-)
 Your task is to write a function which calculates the value of a word based off the sum of the alphabet positions of its characters.
 The input will always be made of only lowercase letters and will never be empty.
 """
+import pytest
 
 
 def words_to_marks(s):
@@ -40,3 +41,19 @@ def words_to_marks(s):
     }
 
     return sum(alphabet[i] for i in s if i in alphabet)
+
+
+@pytest.mark.parametrize("s, result", [
+    ('attitude', 100),
+    ('friends', 75),
+    ('family', 66),
+    ('selfness', 99),
+    ('knowledge', 96),
+])
+def test_words_to_marks(s, result):
+    """Pytest"""
+    assert words_to_marks(s) == result
+
+
+if __name__ == '__main__':
+    pytest.main()
