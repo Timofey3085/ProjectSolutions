@@ -51,6 +51,7 @@ def words_to_marks(s):
     ('knowledge', 96),
     ('abc', 6),
     ('bbc', 7),
+    ('xxl', 60),
 ])
 def test_words_to_marks(s, result):
     """Pytest"""
