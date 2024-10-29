@@ -10,6 +10,7 @@ The consonant substrings are: "str" and "ngth" with values "str" = 19 + 20 + 18 
  The highest is 57.
 For C: do not mutate input.
 """
+import pytest
 
 
 def solve(s):
@@ -59,3 +60,18 @@ def solve(s):
     max_value = max(max_value, current_value)
 
     return max_value
+
+
+@pytest.mark.parametrize("s, max_value", [
+    ("cozy", 51),
+    ("xyzzy", 126),
+    ("zodiac", 26),
+    ("chruschtschov", 80),
+    ("khrushchev", 38),
+    ("strength", 57),
+    ("catchphrase", 73),
+    ("twelfthstreet", 103),
+    ("mischtschenkoana", 80)
+])
+def test_solve(s, max_value):
+    assert solve(s) == max_value
