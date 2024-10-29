@@ -13,6 +13,7 @@ For C: do not mutate input.
 
 
 def solve(s):
+    """My_solution"""
     vowels = ("a", "e", "i", "o", "u")
     alphabet = {
         'a': 1,
