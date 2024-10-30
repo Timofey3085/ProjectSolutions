@@ -53,6 +53,7 @@ def words_to_marks(s):
     ('bbc', 7),
     ('xxl', 60),
     ('a', 1),
+    ('b', 2),
     ([], 0),
 ])
 def test_words_to_marks(s, result):
