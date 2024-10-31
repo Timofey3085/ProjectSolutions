@@ -9,8 +9,6 @@ you have to return all the numbers in that string in the order they occur.
 """
 import unittest
 
-import pytest
-
 
 def filter_string(st):
     """My_solution"""
