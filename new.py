@@ -10,4 +10,7 @@ you have to return all the numbers in that string in the order they occur.
 
 
 def filter_string(st):
+    """My_solution"""
     return int("".join([num for num in st if num.isdigit()]))
+
+
