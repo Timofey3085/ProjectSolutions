@@ -24,6 +24,7 @@ class FilterString(unittest.TestCase):
         self.assertEqual(filter_string("123"), 123)
         self.assertEqual(filter_string("a1b2c3"), 123)
         self.assertEqual(filter_string("aa1bb2cc3dd"), 123)
+        self.assertEqual(filter_string('thisis4you'), 4)
 
 
 if __name__ == '__main__':
