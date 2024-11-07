@@ -12,6 +12,7 @@ import pytest
 
 
 def count_bits(n):
+    """My_solution"""
     binary = bin(n)[2:]
     return binary.count('1')
 
