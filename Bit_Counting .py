@@ -19,6 +19,7 @@ def count_bits(n):
 
 @pytest.mark.parametrize("n, result", [
     (0, 0),
+    (1, 1),
     (4, 1),
     (7, 3),
     (9, 2),
