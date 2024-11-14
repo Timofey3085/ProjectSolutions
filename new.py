@@ -23,6 +23,7 @@ n = 695; p = 2 ---> 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
 
 n = 46288; p = 3 ---> 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
 """
+import pytest
 
 
 def dig_pow(n, p):
@@ -38,3 +39,15 @@ def dig_pow(n, p):
         return total_sum // n
     else:
         return -1
+
+
+@pytest.mark.parametrize("n, p, result", [
+    (89, 1, 1),
+])
+def test_dig_pow(n, p, result):
+    """Pytest"""
+    assert dig_pow(n, p) == result
+
+
+if __name__ == '__main__':
+    pytest.main()
