@@ -25,3 +25,15 @@ n = 46288; p = 3 ---> 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 
 """
 
 
+def dig_pow(n, p):
+    # Преобразуем n в строку и итерируем по числам
+    digits = [int(d) for d in str(n)]
+
+    # Вычисляем сумму цифр, возведённых в соответствующие степени
+    total_sum = sum(digit ** (p + i) for i, digit in enumerate(digits))
+
+    # Проверяем, можно ли представить total_sum как k * n
+    if total_sum % n == 0:
+        return total_sum // n
+    else:
+        return -1
