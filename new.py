@@ -43,6 +43,11 @@ def dig_pow(n, p):
 
 @pytest.mark.parametrize("n, p, result", [
     (89, 1, 1),
+    (92, 1, -1),
+    (46288, 3, 51),
+    (41, 5, 25),
+    (114, 3, 9),
+    (8, 3, 64),
 ])
 def test_dig_pow(n, p, result):
     """Pytest"""
