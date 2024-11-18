@@ -7,3 +7,11 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 """
 
 
+def disemvowel(string_):
+    """My_solution"""
+    res = []
+    words = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    for i in string_:
+        if i not in words:
+            res.append(i)
+    return "".join(res)
