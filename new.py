@@ -5,6 +5,7 @@ neutralizing the threat.
 Your task is to write a function that takes a string and return a new string with all vowels removed.
 For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
 """
+import pytest
 
 
 def disemvowel(string_):
@@ -15,3 +16,15 @@ def disemvowel(string_):
         if i not in words:
             res.append(i)
     return "".join(res)
+
+
+@pytest.mark.parametrize("string_, result", [
+    ("This website is for losers LOL!", "Ths wbst s fr lsrs LL!"),
+])
+def test_disemvowel(string_, result):
+    """Pytest"""
+    assert disemvowel(string_) == result
+
+
+if __name__ == '__main__':
+    pytest.main()
