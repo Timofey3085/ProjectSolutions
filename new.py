@@ -9,7 +9,7 @@ import pytest
 
 
 def disemvowel(string_):
-    """My_solution"""
+    """My_Solution"""
     res = []
     words = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
     for i in string_:
