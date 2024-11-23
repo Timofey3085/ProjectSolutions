@@ -24,6 +24,7 @@ def disemvowel(string_):
     ("What are you, a communist?", "Wht r y,  cmmnst?"),
     ("aeiou", ""),
     ("I love You", " lv Y"),
+    ("TSMC", "TSMC"),
     ("", ""),
 ])
 def test_disemvowel(string_, result):
