@@ -26,6 +26,7 @@ def disemvowel(string_):
     ("I love You", " lv Y"),
     ("TSMC", "TSMC"),
     ("ABC", "BC"),
+    ("12345", "12345"),
     ("", ""),
 ])
 def test_disemvowel(string_, result):
