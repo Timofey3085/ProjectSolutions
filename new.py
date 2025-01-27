@@ -32,6 +32,7 @@ def integrate(coefficient, exponent):
     (12, 5, "2x^6"),
     (20, 1, "10x^2"),
     (40, 3, "10x^4"),
+    (90, 2, "30x^3"),
 ])
 def test_integrate(coefficient, exponent, expected_result):
     """Pytest"""
