@@ -30,6 +30,7 @@ def integrate(coefficient, exponent):
 @pytest.mark.parametrize("coefficient, exponent, expected_result", [
     (3, 2, "1x^3"),
     (12, 5, "2x^6"),
+    (20, 1, "10x^2"),
 ])
 def test_integrate(coefficient, exponent, expected_result):
     """Pytest"""
