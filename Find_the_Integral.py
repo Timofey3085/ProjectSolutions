@@ -22,6 +22,7 @@ import pytest
 
 
 def integrate(coefficient, exponent):
+    """My_Solution"""
     result_coefficient = int(coefficient / (exponent + 1))
     result_exponent = exponent + 1
     return f'{result_coefficient}x^{result_exponent}'
