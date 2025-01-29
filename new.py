@@ -24,6 +24,7 @@ def test_who_is_paying():
     """Pytest"""
     assert who_is_paying("Mexico") == ["Mexico", "Me"]
     assert who_is_paying("Melania") == ["Melania", "Me"]
+    assert who_is_paying("Melissa") == ["Melissa", "Me"]
 
 
 if __name__ == '__main__':
