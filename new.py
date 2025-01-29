@@ -30,6 +30,17 @@ def test_who_is_paying():
 def test_if_two_letters():
     """Pytest"""
     assert who_is_paying("Me") == ["Me"]
+    assert who_is_paying("Ta") == ["Ta"]
+
+
+def test_is_no_letter():
+    """Pytest"""
+    assert who_is_paying("") == [""]
+
+
+def test_is_one_letter():
+    """Pytest"""
+    assert who_is_paying("I") == ["I"]
 
 
 if __name__ == '__main__':
