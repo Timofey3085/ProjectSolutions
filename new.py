@@ -27,6 +27,11 @@ def test_who_is_paying():
     assert who_is_paying("Melissa") == ["Melissa", "Me"]
 
 
+def test_if_two_letters():
+    """Pytest"""
+    assert who_is_paying("Me") == ["Me"]
+
+
 if __name__ == '__main__':
     pytest.main()
 
