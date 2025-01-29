@@ -12,8 +12,19 @@ Your code will show Full name of the neighbor and the truncated version of the n
 If the number of the characters in name is less than or equal to two,
 it will return an array containing only the name as is.
 """
+import pytest
 
 
 def who_is_paying(name):
     """My_solution"""
     return [name, name[:2]] if len(name) > 2 else [name]
+
+
+def test_who_is_paying():
+    """Pytest"""
+    assert who_is_paying("Mexico") == ["Mexico", "Me"]
+
+
+if __name__ == '__main__':
+    pytest.main()
+
