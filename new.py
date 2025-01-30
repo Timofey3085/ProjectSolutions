@@ -11,6 +11,7 @@ but the final array should not be sorted in numerical order.
 
 
 def unite_unique(*args):
+    """Pytest"""
     list = []
     for array in args:
         for value in array:
