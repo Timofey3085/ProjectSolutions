@@ -8,13 +8,26 @@ but with no duplicates in the final array.
 The unique numbers should be sorted by their original order,
 but the final array should not be sorted in numerical order.
 """
+import pytest
 
 
 def unite_unique(*args):
     """Pytest"""
-    list = []
+    unique_list = []
     for array in args:
         for value in array:
-            if value not in list:
-                list.append(value)
-    return list
+            if value not in unique_list:
+                unique_list.append(value)
+    return unique_list
+
+
+@pytest.mark.parametrize("args, result", [
+    (([1, 2], [3, 4]), [1, 2, 3, 4]),
+])
+def test_unite_unique(args, result):
+    """Pytest"""
+    assert unite_unique(*args) == result
+
+
+if __name__ == '__main__':
+    pytest.main()
