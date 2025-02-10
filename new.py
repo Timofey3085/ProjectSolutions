@@ -33,6 +33,8 @@ def re_ordering(text):
     ('jojo ddjajdiojdwo ana G nnibiial', 'G jojo ddjajdiojdwo ana nnibiial'),
     ('is one of those rare names that s both exotic and simple Adira',
      'Adira is one of those rare names that s both exotic and simple'),
+    ('is an older name than annabel Amabel and a lot more distinctive',
+     'Amabel is an older name than annabel and a lot more distinctive'),
 ])
 def test_re_ordering(text, result):
     """Pytest"""
