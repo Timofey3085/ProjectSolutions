@@ -30,6 +30,8 @@ def re_ordering(text):
     ('Mano donowana', 'Mano donowana'),
     ('wario LoBan hello', 'LoBan wario hello'),
     ('bull color pig Patrick', 'Patrick bull color pig'),
+    ('jojo ddjajdiojdwo ana G nnibiial', 'G jojo ddjajdiojdwo ana nnibiial'),
+
 ])
 def test_re_ordering(text, result):
     """Pytest"""
