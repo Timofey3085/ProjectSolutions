@@ -31,7 +31,8 @@ def re_ordering(text):
     ('wario LoBan hello', 'LoBan wario hello'),
     ('bull color pig Patrick', 'Patrick bull color pig'),
     ('jojo ddjajdiojdwo ana G nnibiial', 'G jojo ddjajdiojdwo ana nnibiial'),
-
+    ('is one of those rare names that s both exotic and simple Adira',
+     'Adira is one of those rare names that s both exotic and simple'),
 ])
 def test_re_ordering(text, result):
     """Pytest"""
