@@ -12,6 +12,7 @@ In the string, there will always be exactly one word with a capital letter in it
 
 
 def re_ordering(text):
+    """My_solution"""
     res = []
     r = []
     t = text.split()
