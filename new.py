@@ -9,6 +9,7 @@ Each word in the string is separated by a single space.
 
 In the string, there will always be exactly one word with a capital letter in it.
 """
+import pytest
 
 
 def re_ordering(text):
@@ -22,3 +23,18 @@ def re_ordering(text):
         else:
             r.append(i)
     return ' '.join(res + r)
+
+
+@pytest.mark.parametrize("text, result", [
+    ('ming Yao', 'Yao ming'),
+    ('Mano donowana', 'Mano donowana'),
+    ('wario LoBan hello', 'LoBan wario hello'),
+    ('bull color pig Patrick', 'Patrick bull color pig'),
+])
+def test_re_ordering(text, result):
+    """Pytest"""
+    assert re_ordering(text) == result
+
+
+if __name__ == '__main__':
+    pytest.main()
